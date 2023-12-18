@@ -1,1 +1,57 @@
 <iframe width="100%" height="100%" src="https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo/ovo.xml" frameborder="0" allowfullscreen=""></iframe>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: 'Courier New', monospace;
+}
+</style>
+</head>
+<body>
+
+<html>
+ 
+  <head>Welcome To CMDGames! Here are some games below</head>
+ 
+  <body>
+    <button> <h1>OVO</h1> </button>
+    <script>
+      var urlObj = new window.URL(window.location.href);
+      var url = "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo/ovo.xml";
+      if (url) {
+        var win;
+ 
+        document.querySelector('button').onclick = function() {
+          if (win) {
+            win.focus();
+          } else {
+            win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+          }
+          document.querySelector('button').style.bacground = 'grey';
+          document.querySelector('button').innerHTML = "Play Now";
+        };
+      }
+ 
+    </script>
+  </body>
+ 
+</html>
+
+<h1>Lorem ipsum dolor sit amet</h1>
+
+<p>Lorem ipsum dolor sit amet.</p>
+<p>0 1 2 3 4 5 6 7 8 9</p>
+
+</body>
+</html>
